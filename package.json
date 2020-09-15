@@ -1,0 +1,18 @@
+{
+  "name": "react-native-responsive-styles",
+  "version": "1.0.0",
+  "description": "Make your styles very similar for any device screen",
+  "main": "index.js",
+  "keywords": [
+    "react-native",
+    "styles",
+    "responsive",
+    "relative"
+  ],
+  "author": "Tapston Development",
+  "license": "MIT",
+  "peerDependencies": {
+    "react-native": ">=0.50.0",
+    "react-native-extended-stylesheet": "*"
+  }
+}
