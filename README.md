@@ -1,8 +1,12 @@
 # react-native-responsive-styles
-##### Make your styles very similar for any device screen 📱
-##Installation
+## Make your styles very similar for any device screen 📱
+
+### Installation
+
 `yarn add react-native-responsive-styles`
-##Usage
+
+### Usage
+
 - Define a new instance of RNResponsiveStyles
 ```js
 // You need only one instance for entire code
