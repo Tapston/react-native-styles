@@ -11,8 +11,6 @@
 import RNResponsiveStyles from 'react-native-responsive-styles';
 ```
 - Define a new instance of RNResponsiveStyles
-
-- Define a new instance of RNResponsiveStyles
 ```js
 // You need only one instance for entire code
 const StylesCreator = new RNResponsiveStyles({
