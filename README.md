@@ -6,7 +6,12 @@
 `yarn add react-native-responsive-styles`
 
 ### Usage
-
+- Import
+```js
+import RNResponsiveStyles from 'react-native-responsive-styles';
+```
+- Define a new instance of RNResponsiveStyles
+```js
 - Define a new instance of RNResponsiveStyles
 ```js
 // You need only one instance for entire code
