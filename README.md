@@ -8,12 +8,12 @@
 ### Usage
 - Import
 ```js
-import RNResponsiveStyles from 'react-native-responsive-styles';
+import RNStyles from 'react-native-responsive-styles';
 ```
-- Define a new instance of RNResponsiveStyles
+- Define a new instance of RNStyles
 ```js
 // You need only one instance for entire code
-const StylesCreator = new RNResponsiveStyles({
+const StylesCreator = new RNStyles({
   designWidth: 414,
   designHeight: 896,
   minimalFactor: 1,
