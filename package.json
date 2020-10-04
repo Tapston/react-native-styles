@@ -1,5 +1,5 @@
 {
-  "name": "react-native-responsive-styles",
+  "name": "@tapston/react-native-styles",
   "version": "1.0.0",
   "description": "Make your styles very similar for any device screen",
   "main": "index.js",
@@ -7,9 +7,11 @@
     "react-native",
     "styles",
     "responsive",
-    "relative"
+    "relative",
+    "adaptive",
+    "tapston"
   ],
-  "author": "Tapston Development",
+  "author": "Tapston Development, LLC / tapston.com",
   "license": "MIT",
   "peerDependencies": {
     "react-native": ">=0.50.0",
