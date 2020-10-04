@@ -38,7 +38,7 @@ const CONFIG = {
  *   },
  * });
  */
-export default class RNResponsiveStyles {
+export default class RNStyles {
   #designWidth = null;
   #designHeight = null;
   #minimalFactor = null;
@@ -110,6 +110,14 @@ export default class RNResponsiveStyles {
                 o[prop] = o[prop];
                 break;
               case 'useAverageFactor':
+                delete o[prop];
+                break;
+              case 'staticWidth':
+                o.width = o[prop];
+                delete o[prop];
+                break;
+              case 'staticHeight':
+                o.height = o[prop];
                 delete o[prop];
                 break;
               case 'fontSize':
