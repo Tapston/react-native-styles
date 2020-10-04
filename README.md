@@ -1,9 +1,9 @@
-# react-native-responsive-styles
+# @tapston/react-native-styles
 ## Make your styles very similar for any device screen 📱
 
 ### Installation
 
-`yarn add react-native-responsive-styles`
+`yarn add @tapston/react-native-styles`
 
 ### Usage
 - Import
