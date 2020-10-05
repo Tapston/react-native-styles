@@ -8,7 +8,7 @@
 ### Usage
 - Import
 ```js
-import RNStyles from 'react-native-responsive-styles';
+import RNStyles from '@tapston/react-native-styles';
 ```
 - Define a new instance of RNStyles
 ```js
