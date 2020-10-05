@@ -12,7 +12,10 @@
     "tapston"
   ],
   "author": "Tapston Development, LLC / tapston.com",
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "publishConfig": { 
+    "registry": "https://npm.pkg.github.com/",
+    "access": "public"
+  },
   "license": "MIT",
   "peerDependencies": {
     "react-native": ">=0.50.0",
