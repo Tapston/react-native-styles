@@ -1,6 +1,6 @@
 {
   "name": "@tapston/react-native-styles",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "Make your styles very similar for any device screen",
   "main": "index.js",
   "keywords": [
@@ -14,7 +14,6 @@
   "homepage": "https://github.com/Tapston/react-native-styles#readme",
   "author": "Tapston Development, LLC / tapston.com",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/",
     "access": "public"
   },
   "license": "MIT",
