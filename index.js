@@ -46,7 +46,10 @@ class RNStyles {
   #factorWidth = null;
   #factorHeight = null;
   #factorAverage = null;
-
+  
+  constructor() {
+    this.init();
+  }
   /**
    * @param {CONFIG} config - configuration of the module
    */
@@ -55,16 +58,23 @@ class RNStyles {
     const { height, width } = Dimensions.get('window');
 
     this.#designWidth = config?.designWidth || CONFIG.designWidth;
-    this.#designHeight = config?.designHeight ||  CONFIG.designHeight;
+    this.#designHeight = config?.designHeight || CONFIG.designHeight;
     this.#minimalFactor = config?.minimalFactor || CONFIG.minimalFactor;
 
     const factorWidth = width / this.#designWidth;
-    this.#factorWidth = factorWidth < this.#minimalFactor ? (factorWidth + this.#minimalFactor) / 2 : factorWidth;
+    this.#factorWidth =
+      factorWidth < this.#minimalFactor
+        ? (factorWidth + this.#minimalFactor) / 2
+        : factorWidth;
 
     const factorHeight = height / this.#designHeight;
-    this.#factorHeight =  factorHeight < this.#minimalFactor ? (factorHeight + this.#minimalFactor) / 2 : factorHeight;
+    this.#factorHeight =
+      factorHeight < this.#minimalFactor
+        ? (factorHeight + this.#minimalFactor) / 2
+        : factorHeight;
 
     this.#factorAverage = (this.#factorWidth + this.#factorHeight) / 2;
+    this.#pluginInited = true;
   }
   /**
    * Make number relative by width
@@ -176,10 +186,6 @@ class RNStyles {
    * @returns {EStyleSheet.AnyObject}
    */
   create(obj) {
-    if (this.designWidth || this.designHeight) {
-      console.warn('Missing initialization values. Use RNStyles.init(config)');
-      return;
-    }
     return EStyleSheet.create(this.__modify(obj));
   }
 }

@@ -10,13 +10,13 @@
 ```js
 import RNStyles from '@tapston/react-native-styles';
 ```
-- Initialize RNStyles in index.js
+- Initialize you config for RNStyles in index.js
 ```js
-// You need initialize instance
+// If you need your own config
 RNStyles.init({
-  designWidth: 414,
-  designHeight: 896,
-  minimalFactor: 1,
+  designWidth: 414, // default 414
+  designHeight: 896, // default 896
+  minimalFactor: 1, // default 1
 });
 
 // designWidth - Width of design. Default is 414 (iPhone 11 Pro Max).
