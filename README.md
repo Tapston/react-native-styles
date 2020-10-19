@@ -19,9 +19,9 @@ RNStyles.init({
   minimalFactor: 1, // default 1
 });
 
-// designWidth - Width of design. Default is 414 (iPhone 11 Pro Max).
-// designHeight - Height of design. Default is 896 (iPhone 11 Pro Max).
-// minimalFactor - Factor is the value that all numeric styles are multiplied by. Default minimal factor is 1.
+// designWidth - The width of your design. Default is 414 (iPhone 11 Pro Max).
+// designHeight - The height of your design. Default is 896 (iPhone 11 Pro Max).
+// minimalFactor - Factor is the value all numeric styles are multiplied by. Default minimal factor is 1.
 ```
 - Create your style
 ```js
@@ -40,14 +40,14 @@ const myStyles = RNStyles.create({
 - If you want static values for style use string value instead of number value
 ```js
 {
-  width: '100', // width will be 100 in all devices
-  height: 100, // the height will be different depending on the size of the device
+  width: '100', // Width will be equal to 100 on all devices
+  height: 100, //  Height will be different depending on the size of a device
 }
 ```
 - If you want to change ALL the sizes entire your project just change minimalFactor in constructor
 ```js
 {
   ...,
-  minimalFactor: 1.2, // To increase the size of all elements by 20%
+  minimalFactor: 1.2, // to increase the size of all elements by 20%
 }
 ```
