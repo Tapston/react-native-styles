@@ -40,6 +40,8 @@ class RNStyles {
   #factorWidth = null;
   #factorHeight = null;
   #factorAverage = null;
+  
+  #pluginInited = false;
 
   constructor() {
     this.init();
