@@ -106,18 +106,7 @@ export default class RNStyles {
         } else {
           if (typeof o[prop] !== 'string') {
             switch (prop) {
-              case 'borderRightWidth':
-                o[prop] = o[prop];
-                break;
               case 'useAverageFactor':
-                delete o[prop];
-                break;
-              case 'staticWidth':
-                o.width = o[prop];
-                delete o[prop];
-                break;
-              case 'staticHeight':
-                o.height = o[prop];
                 delete o[prop];
                 break;
               case 'fontSize':
@@ -164,6 +153,12 @@ export default class RNStyles {
                 break;
               case 'borderRadius':
                 o[prop] = this.wh(o[prop]);
+            }
+          } else {
+            if (!isNaN(o[prop])) {
+              if (prop !== 'fontWeight') {
+                o[prop] = Number(o[prop]);
+              }
             }
           }
         }
