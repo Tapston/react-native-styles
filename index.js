@@ -2,14 +2,14 @@ import { Dimensions, PixelRatio } from 'react-native';
 import EStyleSheet from 'react-native-extended-stylesheet';
 
 /**
- * @property {number} designWidth - Width of design. Default is 414 (iPhone 11 Pro Max).
- * @property {number} designHeight - Height of design. Default is 896 (iPhone 11 Pro Max).
+ * @property {number} designWidth - Width of your design. Default value is 428 (iPhone 12 Pro Max).
+ * @property {number} designHeight - Height of your design. Default value is 926 (iPhone 12 Pro Max).
  * @property {number} minimalFactor - Factor is the value that all numeric styles are multiplied by. Default minimal factor is 1
  */
 const CONFIG = {
-  designWidth: 414,
-  designHeight: 896,
-  minimalFactor: 1.2,
+  designWidth: 428,
+  designHeight: 926,
+  minimalFactor: 1,
 };
 
 /**
@@ -46,7 +46,7 @@ class RNStyles {
   #factorWidth = null;
   #factorHeight = null;
   #factorAverage = null;
-  
+
   constructor() {
     this.init();
   }
