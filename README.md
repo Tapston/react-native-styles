@@ -10,10 +10,10 @@
 ```js
 import RNStyles from '@tapston/react-native-styles';
 ```
-- Define a new instance of RNStyles
+- Initialize RNStyles in index.js
 ```js
 // You need only one instance for entire code
-const StylesCreator = new RNStyles({
+RNStyles.init({
   designWidth: 414,
   designHeight: 896,
   minimalFactor: 1,
@@ -25,7 +25,7 @@ const StylesCreator = new RNStyles({
 ```
 - Create your style
 ```js
-const myStyles = StylesCreator.create({
+const myStyles = RNStyles.create({
   // Get a rectangle if the screen of your device is not square
   container: {
     width: 100,
@@ -36,6 +36,13 @@ const myStyles = StylesCreator.create({
     square: 100,
   },
 });
+```
+- If you want static values for style use string value instead of number value
+```js
+{
+  width: '100', // width will be 100 in all devices
+  height: 100, // the height will be different depending on the size of the device
+}
 ```
 - If you want to change ALL the sizes entire your project just change minimalFactor in constructor
 ```js
