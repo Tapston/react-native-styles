@@ -4,7 +4,7 @@ import EStyleSheet from 'react-native-extended-stylesheet';
 /**
  * @property {number} designWidth - Width of your design. Default value is 428 (iPhone 12 Pro Max).
  * @property {number} designHeight - Height of your design. Default value is 926 (iPhone 12 Pro Max).
- * @property {number} minimalFactor - Factor is the value that all numeric styles are multiplied by. Default minimal factor is 1
+ * @property {number} minimalFactor - Factor is the value all numeric styles are multiplied by. The default minimal factor is 1.
  */
 const CONFIG = {
   designWidth: 428,
@@ -14,17 +14,11 @@ const CONFIG = {
 
 /**
  * Make your styles very similar for any device screen.
- * The class makes numeric styles relative to device width and height.
  *
- * Create new class instance and use the instance in your code.
- *
- * If you want to create square or circle, use square property in your styles instead of width and height.
+ * If you want to create a square or a circle, use the square property in your styles instead of width and height.
  * Use paddingHorizontal and paddingVertical. The same with margins.
  *
  * @example
- *
- * // You need only one instance for entire code
- * const StylesCreator = new UStyles();
  *
  * const myStyles = StylesCreator.create({
  *   // Get a rectangle if the screen of your device is not square
