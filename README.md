@@ -12,18 +12,18 @@ import RNStyles from '@tapston/react-native-styles';
 ```
 - Initialize you config for RNStyles in index.js
 ```js
-// If you need your own config
+// If you need your own config:
 RNStyles.init({
-  designWidth: 428, // default 414
-  designHeight: 926, // default 896
-  minimalFactor: 1, // default 1
+  designWidth: 428, // default value is 428
+  designHeight: 926, // default value is 926
+  minimalFactor: 1, // default value is 1
 });
 
 // designWidth - Width of your design. Default value is 414 (iPhone 12 Pro Max).
 // designHeight - Height of your design. Default value is 896 (iPhone 12 Pro Max).
-// minimalFactor - Factor is the value all numeric styles are multiplied by. Default minimal factor is 1.
+// minimalFactor - Factor is the value all numeric styles are multiplied by. The default minimal factor is 1.
 ```
-- Create your style
+- Create your styles
 ```js
 const myStyles = RNStyles.create({
   // Get a rectangle if the screen of your device is not square
@@ -37,17 +37,17 @@ const myStyles = RNStyles.create({
   },
 });
 ```
-- If you want static values for style use string value instead of number value
+- If you want your style's values to be static, use a string value instead of a number
 ```js
 {
   width: '100', // Width will be equal to 100 on all devices
-  height: 100, //  Height will be different depending on the size of a device
+  height: 100, //  Height will depend on the size of a device
 }
 ```
-- If you want to change ALL the sizes entire your project just change minimalFactor in constructor
+- If you want to change all the sizes of the entire project, change minimalFactor in the constructor
 ```js
 {
   ...,
-  minimalFactor: 1.2, // to increase the size of all elements by 20%
+  minimalFactor: 1.2, // To increase the size of all elements by 20%
 }
 ```
