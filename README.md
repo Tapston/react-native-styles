@@ -12,7 +12,7 @@ import RNStyles from '@tapston/react-native-styles';
 ```
 - Initialize RNStyles in index.js
 ```js
-// You need only one instance for entire code
+// You need initialize instance
 RNStyles.init({
   designWidth: 414,
   designHeight: 896,
