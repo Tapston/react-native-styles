@@ -14,13 +14,13 @@ import RNStyles from '@tapston/react-native-styles';
 ```js
 // If you need your own config
 RNStyles.init({
-  designWidth: 414, // default 414
-  designHeight: 896, // default 896
+  designWidth: 428, // default 414
+  designHeight: 926, // default 896
   minimalFactor: 1, // default 1
 });
 
-// designWidth - The width of your design. Default is 414 (iPhone 11 Pro Max).
-// designHeight - The height of your design. Default is 896 (iPhone 11 Pro Max).
+// designWidth - The width of your design. Default is 414 (iPhone 12 Pro Max).
+// designHeight - The height of your design. Default is 896 (iPhone 12 Pro Max).
 // minimalFactor - Factor is the value all numeric styles are multiplied by. Default minimal factor is 1.
 ```
 - Create your style
