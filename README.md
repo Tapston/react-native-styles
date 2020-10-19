@@ -19,8 +19,8 @@ RNStyles.init({
   minimalFactor: 1, // default 1
 });
 
-// designWidth - The width of your design. Default is 414 (iPhone 12 Pro Max).
-// designHeight - The height of your design. Default is 896 (iPhone 12 Pro Max).
+// designWidth - The width of your design. Default value is 414 (iPhone 12 Pro Max).
+// designHeight - The height of your design. Default value is 896 (iPhone 12 Pro Max).
 // minimalFactor - Factor is the value all numeric styles are multiplied by. Default minimal factor is 1.
 ```
 - Create your style
