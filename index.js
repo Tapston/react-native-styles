@@ -38,7 +38,7 @@ const CONFIG = {
  *   },
  * });
  */
-export default class RNStyles {
+class RNStyles {
   #designWidth = null;
   #designHeight = null;
   #minimalFactor = null;
@@ -50,7 +50,8 @@ export default class RNStyles {
   /**
    * @param {CONFIG} config - configuration of the module
    */
-  constructor(config) {
+
+  init(config) {
     const { height, width } = Dimensions.get('window');
 
     this.#designWidth = config?.designWidth || CONFIG.designWidth;
@@ -65,7 +66,6 @@ export default class RNStyles {
 
     this.#factorAverage = (this.#factorWidth + this.#factorHeight) / 2;
   }
-
   /**
    * Make number relative by width
    * @param {number} n - number to refactoring
@@ -176,8 +176,14 @@ export default class RNStyles {
    * @returns {EStyleSheet.AnyObject}
    */
   create(obj) {
+    if (this.designWidth || this.designHeight) {
+      console.warn('Missing initialization values. Use RNStyles.init(config)');
+      return;
+    }
     return EStyleSheet.create(this.__modify(obj));
   }
 }
+
+export default new RNStyles();
 
 EStyleSheet.build();
