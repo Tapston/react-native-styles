@@ -1,6 +1,6 @@
 {
   "name": "@tapston/react-native-styles",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Make your styles very similar for any device screen",
   "main": "index.js",
   "keywords": [
