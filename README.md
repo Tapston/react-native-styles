@@ -64,9 +64,10 @@ If you want to change all the sizes of the entire project, change minimalFactor 
 ```
 ### Media queries
 ```js
-  '@media (min-width: 375) and ios': {
-    block: {
-      width: '75%',
+  block: {
+    width: '75%',
+    '@media (min-width: 375) and ios': {
+      width: '50%',
       height: 36,
       borderRadius: '6',
     },
