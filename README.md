@@ -21,7 +21,6 @@ RNStyles.init({
   designHeight: 926, // default value is 926
   minimalFactor: 1, // default value is 1
 });
-
 // designWidth - Width of your design. Default value is 414 (iPhone 12 Pro Max).
 // designHeight - Height of your design. Default value is 896 (iPhone 12 Pro Max).
 // minimalFactor - Factor is the value all numeric styles are multiplied by. The default minimal factor is 1.
@@ -46,6 +45,21 @@ If you want your value to be static, use a string value instead of a number
 {
   width: '100', // Width will be equal to 100 on all devices
   height: 100, //  Height will depend on the size of a device
+}
+```
+### screenHeight or screenWidth
+If you want to use screenHeight or screenWidth in your project, please look at the example:
+```js
+// In your global styles.js file:
+const { width, height } = Dimensions.get('window');
+export const screenWidth = width;
+export const screenHeight = height;
+// In your screen-view.js file:
+import { screenWidth, screenHeight } from '../../styles';
+...
+{
+  width: `${screenWidth / 2}`,
+  height: `${screenHeight + 24}`,
 }
 ```
 ### Factor (multiplier)
@@ -86,3 +100,6 @@ If you want to change all the sizes of the entire project, change minimalFactor 
     maxWidth: 4 * (192 + (96/2)),
   },
 ```
+## Q&A
+If you have any troubles with 'react-native-extended-stylesheet', try to:
+`yarn add react-native-extended-stylesheet`
