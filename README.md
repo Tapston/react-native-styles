@@ -101,5 +101,5 @@ If you want to change all the sizes of the entire project, change minimalFactor 
   },
 ```
 ## Q&A
-If you have any troubles with 'react-native-extended-stylesheet', try to:
+### If you have any troubles with 'react-native-extended-stylesheet', try this:
 `yarn add react-native-extended-stylesheet`
